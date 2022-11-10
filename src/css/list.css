@@ -1,0 +1,105 @@
+div .container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+div .list {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border-color: grey;
+  border-style: solid;
+  border-radius: 5px;
+  height: fit-content;
+}
+
+div .list-item {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+div .list-item:not(:last-of-type) {
+  border-color: grey;
+  border-style: solid;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+}
+
+div .list-item:hover:not(.active) {
+  background-color: azure;
+}
+
+div .list-item:hover:not(.active):first-of-type {
+  border-radius: 4px 4px 0 0;
+}
+
+div .list-item:hover:not(.active):last-of-type {
+  border-radius: 0 0 4px 4px;
+}
+
+div .active {
+  color: white;
+  background-color: blue;
+}
+
+div .active:first-of-type {
+  border-radius: 4px 4px 0 0;
+}
+
+div .active:last-of-type {
+  border-radius: 0 0 4px 4px;
+}
+
+div .details {
+  width: 300px;
+  min-height: 500px;
+  border-color: grey;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+div .hint {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: grey;
+}
+
+div .spinner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div .details img {
+  width: 300px;
+  height: 300px;
+}
+
+div .item {
+  display: flex;
+  flex-direction: column;
+}
+
+.item span {
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+.item span:not(:last-of-type) {
+  border-color: grey;
+  border-style: solid;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+}
