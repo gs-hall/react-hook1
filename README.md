@@ -1,2 +1,2 @@
-# netology-react-hook1
+# react-hook1
 use-effect
